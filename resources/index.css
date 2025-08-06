@@ -30,6 +30,8 @@ p {
     right: 0;
     bottom: 0;
     float: left;
+    z-index: 10;
+
 }
 
 .side img {
@@ -136,7 +138,7 @@ p {
     height: 100%;
     width: 0;
     position: fixed; 
-    z-index: 1; 
+    z-index: 12; 
     top: 0; 
     left: 0;
     background-color: white;
@@ -188,22 +190,22 @@ p {
 }
 
 .openbtn:hover {
-    color: lightseagreen;
+    color: #222222;
 }
 
 .portfolioWrapper {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+    display: flex;
     margin-top: 15%;
     margin-left: 2%;
-    row-gap: 4%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .portfolioImage {
-    position: relative;
-    margin: auto;
+    margin-bottom: 2%;
+    margin-right: 2%;
     float: left;
-    width: 75%;
+    width: 25%;
     height: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px;
@@ -245,8 +247,6 @@ p {
 
 .main_2 {
     height: 100%;
-    width: 70%;
-    display: flex;
     background-color:white;
     align-items: left;
     text-align: left;
@@ -256,6 +256,7 @@ p {
     right: 0;
     bottom: 0;
     position: absolute;
+    overflow-x: hidden;
 }
 
 .main_2 h1 {
@@ -265,16 +266,6 @@ p {
     color: black;
     font-size: 48px;
     margin-left: 2.5%;
-}
-
-.projectImage {
-    position: relative;
-    width: 50%;
-}
-
-.projectImage img {
-    align-items: center;
-    width: 100%;
 }
 
 .stickyHeader /*for portfolio/blog*/ {
@@ -299,35 +290,38 @@ p {
     font-size: 48px;
 }
 
-.pprojectWrapper {
-    display: grid;
-    grid-template-columns: 50% 50%;
+.projectWrapper {
     margin-top: 15%;
-    margin-left: 2%;
-    row-gap: 4%;
+    height: 75%;
+    display: flex;
+    margin-left: 3%;
+    flex-direction: row;
+}
+
+.projectWrapper > div {
+    width: 100%;
+    flex-basis: auto;
+    flex-wrap: wrap;
 }
 
 .projectImage {
     position: relative;
-    margin: auto;
     float: left;
-    width: 50%;
     height: auto;
-    padding: 10px;
-    margin-left: 10px;
-    z-index: 1;
-    margin-top: 15%;
+    z-index: 2;
 }
 
 .projectImage img {
+    align-items: center;
     width: 100%;
 }
 
 .projectText {
+    display: flex;
     text-align: left;
-    padding-top: 100px;
-    padding-left: 40px;
-    padding-right: 40px;
-    width: auto;
-    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 100%;
+    align-items: vertical;
+    vertical-align: top;
 }
