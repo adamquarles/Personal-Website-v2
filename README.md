@@ -7,3 +7,8 @@ A redo of my original website!
 - Home page
 - About page
 - Portfolio landing page
+- Portfolio template page
+
+### Coming Soon
+- Blog landing page
+- Blog page template
