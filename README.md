@@ -9,6 +9,8 @@ A redo of my original website!
 - Portfolio landing page
 - Portfolio template page
 
-### Coming Soon
+### Semi-functional
 - Blog landing page
+
+### Coming Soon
 - Blog page template
